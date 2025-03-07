@@ -1,0 +1,16 @@
+.Join-Now{
+    background-color: #1762a7;
+    color: white;
+    border:none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.9rem; 
+    cursor: pointer;
+    border-radius:10px;
+}
+.Join-Now:hover{
+    background-color:#2180d8 ;
+}
+.Join-Now:focus{
+    background-color:#2796ff ;
+}

@@ -1,0 +1,171 @@
+.Join {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.JoinMain {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  
+  
+}
+
+.textSection {
+  flex: 1;
+  text-align: left;
+  font-size: 49px;
+  display: flex;
+  margin-left: 7rem;
+  margin-top: -7.4rem;
+}
+
+.textSection h1 {
+  font-size: 49px;
+  margin-bottom: 0.7rem;
+  text-align: left;
+  max-width: 450px;
+  display: flex;
+  width: 19rem;
+  margin-top: 40%;
+  margin-right: 10rem;
+  flex-direction: column;
+}
+
+.highlight {
+  color: #ff007f;
+  margin-top: 0em;
+  margin-left: 0.1em;
+}
+
+.formSection {
+  flex: 1;
+  max-width: 400px;
+  background-color: #1a1a1a;
+  padding: 1rem 4rem 2rem 3rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formSection label {
+  display: block;
+  margin: 0.5rem 0;
+  line-height: 2.5rem;
+}
+
+.formSection input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #2F303A;
+  border-radius: 4px;
+  background-color: #2F303A;
+}
+
+.formSection button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #0066ff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 111%;
+}
+
+.formSection button:hover {
+  background-color: #0051cc;
+}
+
+.errorMessage {
+  color: #ce8181;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.successMessage {
+  color: #7db37d;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background-color: #1a1a1a;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.backgroundCircles::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 4;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  background-color: #3457b21b;
+  position: fixed;
+  top: -8.5%;
+  left: 18%;
+}
+
+.backgroundCircles::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 4;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  background-color: #bc3a801a;
+  position: fixed;
+  bottom: -2%;
+  left: -4%;
+}
+
+@media (width > 800px) {
+  
+  .Join {
+    width: 100%;
+    flex-direction: row;
+  }
+  
+  .JoinMain {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .textSection h1 {
+    flex-direction: unset;
+  }
+  
+  .highlight {
+    margin-left: 1rem;
+  }
+
+  .backgroundCircles::before {
+    width: 400px;
+    height: 400px;
+    top: -17%;
+    left: 18%;
+  }
+
+  .backgroundCircles::after {
+    width: 400px;
+    height: 400px;
+    bottom: -10%;
+    left: -4%;
+  }
+}
+
+
+
+
