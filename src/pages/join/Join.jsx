@@ -21,14 +21,14 @@ const Join = () => {
         if (!formData.name.trim()) {
             errors.name = "⚠ Name is required.";
         } else if (!nameRegex.test(formData.name.trim())) {
-            errors.name = "⚠ Only letters are allowed.";
+            errors.name = "⚠ Incorrect format.";
         }
 
        
         if (!formData.email.trim()) {
             errors.email = "⚠ Email is required.";
         } else if (!emailRegex.test(formData.email.trim())) {
-            errors.email = "⚠ Enter a valid email address.";
+            errors.email = "⚠ Incorrect format.";
         }
 
         
@@ -36,7 +36,7 @@ const Join = () => {
             errors.password = "⚠ Password is required.";
         } else if (!passwordRegex.test(trimmedPassword)) {
             console.log("Password regex failed for:", trimmedPassword);  // error?
-            errors.password = "⚠ Password must be at least 8 characters, include one uppercase letter, one lowercase letter, one number, and one symbol.";
+            errors.password = "⚠ Password incomplete!";
         }
 
         setErrors(errors);
